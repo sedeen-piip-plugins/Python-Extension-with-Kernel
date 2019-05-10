@@ -10,8 +10,6 @@
 #include <iostream>
 
 
-#include "QtWidgets\qmessagebox.h"
-
 // DPTK headers
 #include "Algorithm.h"
 #include "Geometry.h"
@@ -129,7 +127,7 @@ bool pipeline_changed = false;
 
 // Get source image properties
 auto source_factory = image()->getFactory();
-auto source_color = source_factory->getColor();	
+auto source_color = source_factory->getColorSpace();	
 
 if((nullptr == pythonKernel_factory_))
 {

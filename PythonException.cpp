@@ -31,7 +31,7 @@ PythonException::translateException()
     if ( pExcType != NULL )
     {
         PythonObject obj( pExcType , true ) ;
-        std::auto_ptr<PythonObject> attrObj( obj.py_GetAttr( "__name__" ) ) ;
+        std::shared_ptr<PythonObject> attrObj( obj.py_GetAttr( "__name__" ) ) ;
         excType = attrObj->py_ReprVal() ;
     }
     if ( pExcValue != NULL )

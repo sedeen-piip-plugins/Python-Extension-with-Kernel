@@ -46,7 +46,7 @@ public:
 
 private:
 	virtual RawImage doProcessData(const RawImage &source );
-	virtual Color doGetColor() const;
+	virtual ColorSpace const &doGetColorSpace() const;
 
 	//static std::ofstream log_file;
 
@@ -58,6 +58,8 @@ private:
 	float offset_;
 	std::string method_;
 	std::string mode_;
+
+  ColorSpace color_ = ColorSpace(ColorModel::RGB, 8);
 };
 
 } // namespace tile

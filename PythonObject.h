@@ -39,7 +39,7 @@ public:
 	static bool pyobject_to(PyObject*, double& value );
 	static bool pyobject_to(PyObject*, float& value );
 	static bool pyobject_to(PyObject*, std::string& value );
-	static bool pyobject_to(PyObject*, sedeen::Color& value ); 
+	static bool pyobject_to(PyObject*, sedeen::ColorSpace& value ); 
 	static bool pyobject_to(PyObject*, sedeen::Size& value );
 
 	static PythonObject* pyobject_from(const sedeen::image::RawImage& );
@@ -48,7 +48,7 @@ public:
 	static PythonObject* pyobject_from(const double& value );
 	static PythonObject* pyobject_from(const float& value );
 	static PythonObject* pyobject_from(const std::string& value );
-	static PythonObject* pyobject_from(const sedeen::Color& value );
+	static PythonObject* pyobject_from(const sedeen::ColorSpace& value );
 	static PythonObject* pyobject_from(const sedeen::Size& value );
 
 public: 
