@@ -13,7 +13,6 @@ initPython( )
     assert( !gIsInit ) ;
 
     // initialize Python
-	Py_SetPythonHome("C:\\Anaconda2");
     Py_Initialize() ;
     gIsInit = true ;
 }
